@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.example.initial_project.ui.theme.InitialprojectTheme
+import com.example.utils.Source
 
 class MainActivity() : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +18,7 @@ class MainActivity() : ComponentActivity() {
                 sendDebug = true
             }
         }
-
         val startDestination = "main"
-
         setContent {
             InitialprojectTheme {
                 AppNavHost(startDestination = startDestination, sendDebug = sendDebug ?: false)
