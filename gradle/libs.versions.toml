@@ -8,6 +8,7 @@ androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 appcompat = "1.6.1"
 material = "1.11.0"
+ktlintVersion = "11.5.0"
 
 [libraries]
 insert-koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koinComposeVersion" }
@@ -21,4 +22,5 @@ material = { group = "com.google.android.material", name = "material", version.r
 [plugins]
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jlleitschuh-gradle-ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintVersion" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
